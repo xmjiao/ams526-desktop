@@ -11,8 +11,6 @@ LABEL maintainer "Xiangmin Jiao <xmjiao@gmail.com>"
 USER root
 WORKDIR /tmp
 
-ADD image/home $DOCKER_HOME/
-
 # Install system packages
 RUN apt update && \
     apt upgrade -y && \
