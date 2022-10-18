@@ -27,7 +27,7 @@ RUN apt update && \
         libopenmpi-dev \
         openmpi-bin \
         libomp-dev \
-        meld \
+        meld diffuse \
         clang \
         clang-format \
         swig3.0 \
