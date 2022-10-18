@@ -1,14 +1,10 @@
-Welcome to the Docker image for AMS 526 Docker Image!
+Welcome to the Docker image for AMS 526 Docker Image! This image is based on
+Ubuntu 22.04 LTS, with GCC-11, VScode, LAPACK, ddd, and Eigen preinstalled.
 
-This image is based on Ubuntu 22.04 LTS, with GCC-11, VScode, LAPACK, ddd,
-valgrind, and Eigen preinstalled.
+The home directory of the Docker image maps to a Docker data volume named
+ams526_home, which is persistent even after you stop the docker container.
+The ~/shared directory maps to the current work directory on your computer,
+which may be slow but can be convenient for copying files between the host
+computer and the Docker container.
 
-Please save your code and data into the ~/shared or ~/project directories.
-The former maps to the current work directory on your computer. The latter
-maps to a Docker data volume named ams526_project on your host.
-
-To use git with ssh authentication, make sure the ssh key on your host computer
-is in bitbucket and github, and then run "ssh-add" in this terminal to add your
-ssh key to the ssh-agent.
-
-Happy coding!
+Happy computing!
