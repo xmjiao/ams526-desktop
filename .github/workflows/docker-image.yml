@@ -15,12 +15,6 @@ jobs:
       - name: Obtain repository and tag names
         shell: bash
         run: |
-             if [ -z "${{ secrets.DOCKER_HUB_REPO }}" ]; then
-                 echo "uname=${{ secrets.DOCKER_HUB_USERNAME }}" >> $GITHUB_OUTPUT
-             else
-                 echo "uname=${{ secrets.DOCKER_HUB_REPO }}" >> $GITHUB_OUTPUT
-             fi
-             echo "repo=$(echo ${GITHUB_REPOSITORY} | awk -F / '{print $2}')"  >> $GITHUB_OUTPUT
              echo "tag=$(echo ${GITHUB_REF#refs/heads/} | sed 's/^main$/latest/g')" >> $GITHUB_OUTPUT
         id: extract_tag
       - name: Set up QEMU
@@ -40,6 +34,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: ams526/desktop:${{ steps.extract_tag.outputs.tag }}
-          cache-from: type=registry,ref=${{ steps.extract_tag.outputs.uname }}/${{ steps.extract_tag.outputs.repo }}:buildcache
-          cache-to: type=registry,ref=${{ steps.extract_tag.outputs.uname }}/${{ steps.extract_tag.outputs.repo }}:buildcache,mode=max
 
