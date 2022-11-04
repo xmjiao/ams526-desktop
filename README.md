@@ -41,14 +41,11 @@ sudo usermod -G docker -a $USER
 After adding yourself to the `docker` group, you need to log out and log back in before you can use Docker.
 ## Running the Docker Image
 To run the Docker image, first download the script [`ams526_desktop.py`](https://raw.githubusercontent.com/xmjiao/ams526-desktop/main/ams526_desktop.py)
-and save it  to the working directory where you will store your codes and data. You can download the script using command line: On Windows, start `Windows PowerShell`, use the `cd` command to change to the working directory where you will store your codes and data, and then run the following command:
-```
-curl https://raw.githubusercontent.com/xmjiao/ams526-desktop/main/ams526_desktop.py -outfile ams526_desktop.py
-```
-On Linux or Mac, start a terminal, use the `cd` command to change to the working directory, and then run the following command:
+and save it  to the working directory where you will store your codes and data. You can download the script using command line: On Linux or Mac, start a terminal, use the `cd` command to change to the working directory, and then run the following command:
 ```
 curl -s -O https://raw.githubusercontent.com/xmjiao/ams526-desktop/main/ams526_desktop.py
 ```
+The same process may also work in `Windows PowerShell` on Windows.
 
 After downloading the script, you can start a desktop environment using the command
 ```
