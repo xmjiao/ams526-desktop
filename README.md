@@ -40,26 +40,19 @@ sudo usermod -G docker -a $USER
 ```
 After adding yourself to the `docker` group, you need to log out and log back in before you can use Docker.
 ## Running the Docker Image
-To run the Docker image, first download the scripts [`ams526_desktop.py`](https://raw.githubusercontent.com/xmjiao/ams526-desktop/main/ams526_desktop.py)
-and [`ams526_jupyter.py`](https://raw.githubusercontent.com/xmjiao/ams526-desktop/main/ams526_jupyter.py)
-and save them to the working directory where you will store your codes and data. You can download the script using command line: On Windows, start `Windows PowerShell`, use the `cd` command to change to the working directory where you will store your codes and data, and then run the following command:
+To run the Docker image, first download the script [`ams526_desktop.py`](https://raw.githubusercontent.com/xmjiao/ams526-desktop/main/ams526_desktop.py)
+and save it  to the working directory where you will store your codes and data. You can download the script using command line: On Windows, start `Windows PowerShell`, use the `cd` command to change to the working directory where you will store your codes and data, and then run the following command:
 ```
 curl https://raw.githubusercontent.com/xmjiao/ams526-desktop/main/ams526_desktop.py -outfile ams526_desktop.py
-curl https://raw.githubusercontent.com/xmjiao/ams526-desktop/main/ams526_jupyter.py -outfile ams526_jupyter.py
 ```
 On Linux or Mac, start a terminal, use the `cd` command to change to the working directory, and then run the following command:
 ```
 curl -s -O https://raw.githubusercontent.com/xmjiao/ams526-desktop/main/ams526_desktop.py
-curl -s -O https://raw.githubusercontent.com/xmjiao/ams526-desktop/main/ams526_jupyter.py
 ```
 
 After downloading the script, you can start a desktop environment using the command
 ```
 python3 ams526_desktop.py -p
-```
-or start a Jupyter Notebook with C++ support using the command
-```
-python3 ams526_jupyter.py -p
 ```
 
 The command will download and run the Docker image and then launch your default web browser to show the desktop environment. The `-p` option is optional, and it instructs the Python script to pull and update the image to the latest version.
@@ -68,19 +61,11 @@ For additional command-line options, use the command
 ```
 python3 ams526_desktop.py -h
 ```
-or 
-```
-python3 ams526_jupyter.py -h
-```
 
 ### Running the Docker Image Offline
 After you have download the Docker image using the `curl` and `python` commands above, you can run the image offline without internet connection using the following command:
 ```
 python3 ams526_desktop.py
-```
-or 
-```
-python3 ams526_jupyter.py
 ```
 in the directory where you ran the `curl` command above.
 
