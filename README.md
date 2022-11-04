@@ -10,7 +10,7 @@ Before you start, you need to first install Python and Docker on your computer b
 ### Installing Python
 If you use Linux or Mac, Python 3.x is most likely already installed on your computer, so you can skip this step.
 
-If you use Windows, you need to install Python if you have not yet done so. The easiest way is to install `Miniconda`, which you can download at https://repo.continuum.io/miniconda/Miniconda3-latest-Windows-x86_64.exe. During installation, make sure you check the option to make Miniconda the system's default Python.
+If you use Windows, you need to install Python if you have not yet done so. The easiest way is to install Python 3.10 by following [this link]( https://apps.microsoft.com/store/detail/python-310/9PJPW5LDXLZ5?hl=en-us&gl=us).
 
 ### Installing Docker
 Download Docker Desktop for free at https://docs.docker.com/get-docker/ and then run the installer. Note that you need administrator's privilege to install Docker. After installation, make sure you launch Docker before proceeding to the next step.
