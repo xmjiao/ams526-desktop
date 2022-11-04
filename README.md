@@ -16,8 +16,7 @@ If you use Windows, you need to install Python if you have not yet done so. The 
 Download Docker Desktop for free at https://docs.docker.com/get-docker/ and then run the installer. Note that you need administrator's privilege to install Docker. After installation, make sure you launch Docker before proceeding to the next step.
 
 **Notes for Windows Users**
-1. Docker only supports 64-bit Windows 10 Pro or higher. It is highly recommended that you install Docker Desktop with the WSL 2 backend instead of the Hyper-V backend. The latter only supports Enterprise or Education versions, has lower performance, and requires additional configuration steps.
-2. For security reasons, it is recommended that you do not use Docker in the Administrator account, even if you are the sole user on the computer.
+* It is highly recommended that you install Docker Desktop with the WSL 2 backend instead of the Hyper-V backend. The latter only supports Enterprise or Education versions, has lower performance, and requires additional configuration steps.
 
 **Notes for Mac Users**
 1. Docker Desktop supports only MacOS 10.15 or newer. The Docker image for AMS 526 supports both Intel chips and Apple M1 chips natively. 
