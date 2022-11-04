@@ -49,7 +49,7 @@ def parse_args(description):
         "--hostname",
         help=
         "Hostname of the container. The default is ams526-desktop.",
-        default='matlab-desktop',
+        default='ams526-desktop',
     )
 
     parser.add_argument(
