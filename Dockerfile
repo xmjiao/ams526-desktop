@@ -19,6 +19,7 @@ RUN apt update && \
         git \
         gdb \
         ddd \
+        octave \
         valgrind \
         electric-fence \
         libeigen3-dev \
